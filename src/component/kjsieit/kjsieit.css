@@ -1,0 +1,270 @@
+.head{
+    
+    padding: 0;
+
+}
+*{
+    background: #cad2c5;
+    /*background:linear-gradient(to right, #afeeee,	#ff00ff); */
+    background-size:auto;
+    padding:0%;
+ }
+ nav{
+    list-style: none;
+    padding-top: 0px ;
+    padding: 0 70px;
+    margin: auto;
+}
+@keyframes example{
+  from {color: white;}
+  to{color:transparent}
+  /*from {color: white;}
+  to{color:#ff00ff}*/
+}
+.logo{
+    color:white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 0 100px;
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    animation-name:example;
+    animation-duration: 1.5s;
+    animation-direction: reverse;
+
+
+}
+.align{
+    background:#84a98c;
+    /*background-image: url('https://64.media.tumblr.com/9b21c9ffae9b31777331159753fe2f23/tumblr_ontrlf7Uem1uzwgsuo1_400.gif');*/
+    background-size:contain;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+}
+.slider{
+    margin-right: 50px;
+    width: 800px;
+    height: 500px;
+    border-radius: 0px;
+    overflow: hidden;
+  }
+  
+  .slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+  }
+  
+  .slides input{
+    display: none;
+  }
+  
+  .slide{
+    width: 20%;
+    transition: 2s;
+  }
+  
+  .slide img{
+    filter:opacity(100%);
+    width: 800px;
+    height: 500px;
+  }
+  
+  /*css for manual slide navigation*/
+  
+  .navigation-manual{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .manual-btn{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  
+  .manual-btn:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  .manual-btn:hover{
+    background: #40D3DC;
+  }
+  
+  #radio1:checked ~ .first{
+    margin-left: 0;
+  }
+  
+  #radio2:checked ~ .first{
+    margin-left: -20%;
+  }
+  
+  #radio3:checked ~ .first{
+    margin-left: -40%;
+  }
+  
+  #radio4:checked ~ .first{
+    margin-left: -60%;
+  }
+  
+  /*css for automatic navigation*/
+  
+  .navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+  }
+  
+  .navigation-auto div{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+  }
+  
+  .navigation-auto div:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  #radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #40D3DC;
+  }
+  
+  #radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #40D3DC;
+  }
+  
+  #radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #40D3DC;
+  }
+  
+  #radio4:checked ~ .navigation-auto .auto-btn4{
+    background: #40D3DC;
+  }
+
+  
+.header{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:white;
+}
+.subheader{
+    display: flex;
+    justify-content: center;
+    padding: 0 70px;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:black;
+}
+
+ul{
+    padding: 0 150px;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:black;
+}
+.sub-image{
+    padding:0 370px;
+}
+.sub-content{
+    font-size: 25px;
+    padding: 0 200px;
+}
+.cards {
+    margin: auto;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+    grid-column:auto;
+    grid-auto-rows: auto;
+    row-gap: 40px;
+    column-gap: 40px;
+
+    font-family: sans-serif;
+    padding-top: 30px;
+}
+.card {
+    box-sizing: border-box;
+    display: grid;
+}
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+.card-image {
+    width: 98.8%;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+    border-top: 2px solid #ebe8e8;
+    border-right: 2px solid #ebe8e8;
+    border-left: 2px solid #ebe8e8;
+}
+
+.card-content {
+    background-color: white;
+    line-height: 1.5;
+    font-size: 0.9em;
+    padding: 10px;
+    background: #fafafa;
+    border-right: 2px solid #ebe8e8;
+    border-left: 2px solid #ebe8e8;
+}
+
+.card-content > p{
+  background-color: white;
+}
+
+
+.card-content > p:first-of-type {
+    margin-top: 0;
+}
+
+.card-content > p:last-of-type {
+    margin-bottom: 0;
+}
+
+.card-info {
+    padding: 15px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #555555;
+    background: #eeeeee;
+    font-size: 0.8em;
+    border-bottom: 2px solid #ebe8e8;
+    border-right: 2px solid #ebe8e8;
+    border-left: 2px solid #ebe8e8;
+}
+
+.card-info img {
+    font-size: 0.9em;
+    margin-right: 8px;
+}
+
+.card-link {
+  background-color: #eeeeee;
+    color:cornflowerblue;
+    text-decoration: none;
+    font-size: 15px;
+    
+}
+
+.card-link:hover {
+    text-decoration: underline;
+}
+    
+.subheader{
+  color: white;
+}
